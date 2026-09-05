@@ -1,7 +1,8 @@
-# Kentkart API (kentkart_new)
+# Public Transportation API Testing
 
-Kentkart API is a backend application built with Node.js and Express.js, using SQLite as its database. The API provides account, media (card), and transaction management, with comprehensive business logic and edge-case coverage. All features are tested with Mocha/Chai.
+A backend API project for public transportation systems, built with Node.js, Express.js, and SQLite.
 
+The project focuses on account, media/card, and transaction management, with comprehensive business-rule validation, edge-case testing, automated test coverage, and Docker support.
 ---
 
 ## Table of Contents
@@ -103,6 +104,7 @@ if (balance === 0) throw new Error('Balance must be greater than 0');
 ## Testing
 - All edge-case and worst-case scenarios are in `tests/kk.test.js`.
 - Automated setup and cleanup for test data.
+- The final test suite includes **51 passing automated tests** covering core API behavior, validation rules, and edge cases.
 - Coverage includes: negative/zero balance, missing fields, invalid status, blacklist, orphan media, foreign key, transaction logic, relational data.
 - Helper functions: `tests/testFunctions.js`
 - Run tests:
